@@ -1,69 +1,64 @@
-* {
-  box-sizing: border-box;
-}
-
-.navbar {
+.barraNavegacion {
   display: flex;
   flex-direction: row;
-  background-color: #1a1a1a;
+  background-color: var(--fondo-barra-navegacion);
   padding: 20px;
   align-items: center;
   justify-content: center;
-  border: 2px solid #2d2d2d;
+  border: 2px solid var(--borde-barra-navegacion);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.nombreh2 {
-  color: #f5f5f5;
+.nombrePortafolio {
+  color: var(--color-texto-pagina);
   flex: 3;
   text-align: center;
 }
 
-.contenedor-a {
+.contenedorEnlaces {
   display: flex;
-  color: #f5f5f5;
+  color: var(--color-texto-pagina);
   font-size: 14px;
   flex: 8;
   margin: auto;
   justify-content: center;
 }
 
-.contenedor-a a {
+.enlace {
   position: relative;
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
-  
-}
-.contenedor-a a:hover{
-  color: rgba(255, 255, 255, 0.491);
 }
 
-.contenedor-a a::after {
+.enlace:hover {
+  color: var(--color-enlace-hover);
+}
+
+.enlace::after {
   position: absolute;
   right: 0;
   bottom: -4px;
   left: 0;
   height: 1px;
-  background-color: #a3a3a3;
+  background-color: var(--color-subrayado);
   content: "";
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
-
 }
 
-.contenedor-a a:hover::after,
-.contenedor-a a:focus-visible::after {
+.enlace:hover::after,
+.enlace:focus-visible::after {
   transform: scaleX(1);
-
 }
 
-.cambiartema {
+.botonCambiarTema {
   padding: 2px;
   flex: 0 0 40px;
-  background: #2d2d2d;
-  color: #a3a3a3;
+  background: var(--fondo-boton-tema);
+  color: var(--color-boton-tema);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,23 +70,23 @@
   transition: transform 0.3s linear, background 0.3s linear, border-radius 0.3s linear;
 }
 
-.cambiartema:hover {
+.botonCambiarTema:hover {
   transform: translateY(-3px) rotate(5deg);
   border-radius: 12px;
   background: rgba(100, 100, 100, 0.631);
 }
 
-.cambiartema i {
+.iconoTema {
   display: grid;
   width: 1em;
   height: 1em;
   place-items: center;
   line-height: 1;
-  color: #eab308;
+  color: var(--color-boton-tema);
   transform-origin: center;
-  transition: transform .5s linear;
+  transition: transform 0.5s linear;
 }
 
-.cambiartema:hover i {
+.botonCambiarTema:hover .iconoTema {
   transform: rotate(100deg);
 }
