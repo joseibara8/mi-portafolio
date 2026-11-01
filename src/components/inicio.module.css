@@ -2,49 +2,62 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-top: 34px;
+  padding: 30px;
+  height: 90vh;
+  padding-top: 30px;
 
 }
 .contenedorTextoInicial{
+  padding-left: 30px;
   margin-top: 4px;
-  padding: 25px;
-    border-right: 1px solid var(--color-subrayado);
+  display: flex;
+  flex-direction: column;
+  gap: 13px ;
+  align-self:  start;
+  padding-top: 50px;
 }
 .contenedorTextoInicial h2{
-  margin-bottom: 10px;
-  color: var(--color-texto-pagina);
+  font-size: 50px;
+  color: #7182F0;
 }
 .contenedorTextoInicial h9{
-  color: var(--color-texto-secundario);
+  font-size: 36px;
+  color: var(--color-texto-pagina);
 }
 .contenedorTextoInicial p{
+
+  width: 80%;
   color: var(--color-texto-secundario);
+  font-size: 22px;
   font-family: inherit;
+}
+
+.boton_cv{
+  border: 0px solid black;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: var(--color-boton);
+  transition: transform .3s;
+  cursor: pointer;
+  color: white;
+  font-size: 19px;
+  width: 29%;
 }
 .contenedorImagen {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 10px;
+  align-self: start;
+  padding-top: 50px;
 }
-.boton_cv{
-  border: 0px solid black;
-  padding: 10px;
-  border-radius: 12px;
-  background-color: var(--color-boton);
-  margin-top: 10px;
-  transition: transform .3s;
-  cursor: pointer;
-}
-
 .boton_cv:hover{
   transform: translateY(-1);
-  box-shadow: 0 2px 6px var(--borde-barra-navegacion); ;
+  box-shadow: 0 2px 6px var(--borde-barra-navegacion); 
 }
 
 .imagen {
-  width: 200px;
-  border-radius: 22px;
+  width: 250px;
+  border-radius: 50%;
 }
 
 
@@ -60,8 +73,22 @@
   display: flex;
   align-items: center;
   min-height: 24px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
+
+.contenedorIconos i::before {
+  display: inline-flex;
+  flex: 0 0 38px;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 0px solid var(--fondo-iconos);
+  border-radius: 50%;
+  background-color: var(--fondo-iconos);
+  box-shadow:0 2px 6px var(--borde-barra-navegacion) ;
+}
+
 .span{
   margin-left: 13px;
   color: var(--color-texto-secundario);

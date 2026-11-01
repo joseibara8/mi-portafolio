@@ -5,10 +5,9 @@ export const Inicio = () => {
       <div className={estilos.contenedorInicio}>
         <div className={estilos.contenedorTextoInicial}>
           <h9>Hola, yo soy</h9>
-          <h2>jose Ibarra</h2>
+          <h2>jose Benjamin</h2>
           <p>
-            soy desarrollador web y de aplicaciones full stack, apasionado por
-            la tecnologia y en constante buscqueda de nuevos retos
+            Tengo 20 años y me apasiona la tecnologia. Me enfoco en crear aplicaciones web modernas y funcionales, siempre buscando aprender algo nuevo y mejorar cada dia.
           </p>
           <button className={estilos.boton_cv}>descargar cv</button>
             </div>
@@ -16,7 +15,7 @@ export const Inicio = () => {
             <div className={estilos.contenedorImagen}>
           <img className={estilos.imagen} src="/jose.jpeg" alt="Jose Ibarra" />
           <div className={estilos.contenedorIconos}>
-            <i className="fi fi-sr-calendar" aria-hidden="true">
+            <i  className="fi fi-rr-calendar" aria-hidden="true">
               <span className={estilos.span}>20 Años</span>
             </i>
 
