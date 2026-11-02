@@ -2,7 +2,7 @@ import estilos from "./inicio.module.css";
 export const Inicio = () => {
   return (
     <>
-      <div className={estilos.contenedorInicio}>
+      <div id="inicio" className={estilos.contenedorInicio}>
         <div className={estilos.contenedorTextoInicial}>
           <h9>Hola, yo soy</h9>
           <h2>jose Benjamin</h2>

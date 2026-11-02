@@ -37,7 +37,7 @@
   padding: 18px;
   border-radius: 12px;
   background-color: var(--color-boton);
-  transition: transform .3s;
+  transition: transform .8s;
   cursor: pointer;
   color: white;
   font-size: 19px;
@@ -57,7 +57,7 @@
 
 .imagen {
   width: 250px;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 

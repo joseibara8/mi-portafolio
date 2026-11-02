@@ -1,0 +1,99 @@
+
+.contenedorTecnologia {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  background-color: var(--color-fondo);
+  min-height: 90vh;
+  height: auto;
+  overflow: visible;
+}
+
+.contenedorTexto{
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  gap: 10px ;
+}
+
+.contenedorTexto h5{
+  font-size: 30px;
+    color: var(--color-acento);
+}
+
+.contenedorTexto h2{
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-texto-pagina);
+}
+.contenedorTexto p{
+  font-size: 22px;
+  color: var(--color-texto-secundario);
+  line-height: 1.5;
+  width: 70%;
+}
+
+.contenedorIconos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 35px;
+      overflow: visible;
+}
+
+.divIconos{
+border: 0px solid var(--color-acento);
+  box-shadow: 0 2px 6px var(--borde-barra-navegacion); 
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 0px;
+  padding: 10px;
+  border-radius: 17px;
+  cursor: pointer;
+  transition: transform .8s , border .3s;
+  background-color: var(--fondo-iconos);
+
+}
+
+
+
+.iconoTecnologia {
+  align-self: start;
+  justify-self: start;
+  justify-content: start;
+  font-size: 36px;
+
+}
+
+.iconoNeon {
+  align-self: center;
+  justify-self: center;
+  width: 36px;
+  height: 36px;
+}
+
+
+.divIconos > :nth-child(2) {
+  grid-column: auto;
+  align-self: center;
+  text-align: start;
+}
+
+.divIconos > :last-child {
+  margin-top: 12px;
+  grid-column: 1 / -1;
+  text-align: center;
+  align-self: center;
+  box-shadow: 0 2px 6px var(--borde-barra-navegacion); 
+  border: 0px solid var(--color-acento);
+  background-color: var(--blanco); 
+  padding: 7px;
+  border-radius: 12px;
+
+}
+
+
+.divIconos:hover{
+  border: 0px solid var(--color-acento);
+  transform: translateY(-1);
+}

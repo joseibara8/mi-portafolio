@@ -16,11 +16,11 @@ export const Navbar = () => {
     <nav className={estilos.barraNavegacion}>
       <h4 className={estilos.nombrePortafolio}>{'</>  Jose Ibarra'}</h4>
       <div className={estilos.contenedorEnlaces}>
-        <a className={estilos.enlace}>Inicio</a>
+        <a className={estilos.enlace} href="#inicio">Inicio</a>
         <a className={estilos.enlace}>Proyectos</a>
-        <a className={estilos.enlace}>Abaut me</a>
+        <a className={estilos.enlace} href="#sobre-mi">Abaut me</a>
         <a className={estilos.enlace}>Contacto</a>
-        <a className={estilos.enlace}>Tecnologias</a>
+        <a className={estilos.enlace} href="#tecnologias">Tecnologias</a>
       </div>
       <button
         className={estilos.botonCambiarTema}

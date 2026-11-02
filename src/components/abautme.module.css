@@ -2,7 +2,7 @@
   display: grid;
   flex-direction: row;
   background-color: var(--fondo-pagina);
-  padding-top: 50px;
+  padding-top: 0px;
   grid-template-columns: 1fr 1fr;
   height: 90vh;
 }
@@ -13,6 +13,7 @@
   gap: 10px;
   padding: 25px;
   padding-left: 50px;
+  padding-top: 0px;
 }
 
 .contenedor_abautme1 p {
@@ -37,7 +38,7 @@
   flex-direction: column;
   gap: 10px;
   padding: 25px;
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 .caja_refran {
@@ -48,4 +49,203 @@
   align-self: center;
   padding: 20px;
   color: var(--color-texto-secundario);
+}
+
+
+.contenedorTecnologia {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  background-color: var(--color-fondo);
+  min-height: 90vh;
+  height: auto;
+  overflow: visible;
+}
+
+.contenedorTexto{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  padding-bottom: 30px;
+  gap: 10px ;
+}
+
+.contenedorTexto h5{
+  font-size: 20px;
+    color: var(--color-acento);
+}
+
+.contenedorTexto h2{
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-texto-pagina);
+}
+.contenedorTexto p{
+  font-size: 22px;
+  color: var(--color-texto-secundario);
+  line-height: 1.5;
+  width: 70%;
+}
+
+.contenedorIconos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 35px;
+      overflow: visible;
+}
+
+.divIconos{
+border: 0px solid var(--color-acento);
+  box-shadow: 0 2px 6px var(--borde-barra-navegacion); 
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 0px;
+  padding: 10px;
+  border-radius: 17px;
+  cursor: pointer;
+  transition: transform .4s ,box-shadow .3s;
+  background-color: var(--fondo-iconos);
+
+}
+
+.divIconos:hover{
+  box-shadow: 0px 20px 20px var(--borde-barra-navegacion);
+  transform: translateY(-2px);
+}
+
+.iconoTecnologia {
+  align-self: start;
+  justify-self: start;
+    justify-content: start;
+  font-size: 36px;
+
+}
+
+.iconoNeon {
+  align-self: center;
+  justify-self: center;
+  width: 36px;
+  height: 36px;
+}
+
+
+.divIconos > :nth-child(2) {
+  grid-column: auto;
+  align-self: center;
+  text-align: start;
+}
+
+.divIconos > :last-child {
+  margin-top: 12px;
+  grid-column: 1 / -1;
+  text-align: center;
+  align-self: center;
+  box-shadow: 0 2px 6px var(--borde-barra-navegacion); 
+  border: 0px solid var(--color-acento);
+  background-color: var(--blanco); 
+  padding: 7px;
+  border-radius: 12px;
+
+}
+
+
+.contenedor_abautme2{
+
+}
+.contenedorIconoTitulo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border:  3px solid var(--color-acento);
+  padding: 5px;
+  align-self: flex-start;
+  border-radius: 12px;
+
+  
+}
+.contenedorIconoTitulo h3{
+color: var(--color-acento);
+
+  
+}
+
+.contenedorIconoTitulo i{
+  font-size: 20px;
+  margin-top: 3px;
+  color: var(--color-acento);
+}
+.contenedorTexto h2 strong{
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-acento);
+}
+
+
+.contenedor_abautme1 h2 strong{
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-acento);
+}
+.contenedor_abautme1 h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-texto-pagina);
+}
+
+.frontendTitulo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left:  3px solid var(--color-acento);
+  padding: 5px;
+  align-self: flex-start;
+  border-radius: 2px;
+}
+.frontendTitulo i{
+  color: var(--color-acento);
+}
+.contenedorIconosFrontend{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blanco);
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contenedorIconosFrontend i{
+  font-size: 36px;
+  color: var(--color-acento);
+align-self: center;
+  justify-self: center;
+  justify-content: center;
+}
+.iconosFrontend{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  overflow: visible;
+  padding-top: 20px;
+}
+
+.frontendTitulo{
+  padding: 10 px;
+  align-self: center;
+  margin-left: auto;
+}
+
+.frontendTitulo h3{
+  color: var(--color-texto-pagina);
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+}
+
+.frontendTitulo i{
+  color: var(--color-acento);
+  font-size: 22px;
 }
