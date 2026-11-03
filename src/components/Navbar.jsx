@@ -17,10 +17,9 @@ export const Navbar = () => {
       <h4 className={estilos.nombrePortafolio}>{'</>  Jose Ibarra'}</h4>
       <div className={estilos.contenedorEnlaces}>
         <a className={estilos.enlace} href="#inicio">Inicio</a>
-        <a className={estilos.enlace}>Proyectos</a>
-        <a className={estilos.enlace} href="#sobre-mi">Abaut me</a>
-        <a className={estilos.enlace}>Contacto</a>
-        <a className={estilos.enlace} href="#tecnologias">Tecnologias</a>
+        <a className={estilos.enlace} href="#proyectos">Proyectos</a>
+        <a className={estilos.enlace} href="#sobre-mi">Sobre mí</a>
+        <a className={estilos.enlace} href="#contacto">Contacto</a>
       </div>
       <button
         className={estilos.botonCambiarTema}
@@ -30,7 +29,7 @@ export const Navbar = () => {
         aria-pressed={isLightTheme}
       >
         <i
-          className={`${estilos.iconoTema} fi ${isLightTheme ? "fi-sr-moon" : "fi-sr-sun"}`}
+          className={`${estilos.iconoTema} ${!isLightTheme ? estilos.iconoSol : ""} fi ${isLightTheme ? "fi-sr-moon" : "fi-sr-sun"}`}
           aria-hidden="true"
         ></i>
       </button>

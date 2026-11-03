@@ -1,6 +1,7 @@
 @import "@flaticon/flaticon-uicons/css/solid/rounded.css";
 @import "@flaticon/flaticon-uicons/css/regular/rounded.css";
 @import "@flaticon/flaticon-uicons/css/thin/rounded.css";
+@import "@flaticon/flaticon-uicons/css/brands/all.css";
 @import "devicon/devicon.min.css";
 
 :root {
@@ -9,6 +10,7 @@
   --fondo-pagina: #0f0f0f;
   --color-texto-pagina: #f5f5f5;
   --color-texto-secundario: #A3A3A3;
+  --fondo-input:#c9c9c9;
   --fondo-barra-navegacion: #1a1a1a;
   --fondo-iconos: #333333;
   --borde-barra-navegacion: #2d2d2d;
@@ -28,6 +30,7 @@ html[data-theme="light"] {
   --fondo-pagina: #f5f5f5;
   --color-texto-pagina: #202020;
   --fondo-barra-navegacion: #fff;
+  --fondo-input:rgb(233, 232, 232);
   --borde-barra-navegacion: #dedede;
   --fondo-iconos: #fff;
   --color-enlace-hover: #666;

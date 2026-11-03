@@ -7,9 +7,9 @@ export const Inicio = () => {
           <h9>Hola, yo soy</h9>
           <h2>jose Benjamin</h2>
           <p>
-            Tengo 20 años y me apasiona la tecnologia. Me enfoco en crear aplicaciones web modernas y funcionales, siempre buscando aprender algo nuevo y mejorar cada dia.
+            Tengo 20 años y me apasiona la tecnologia. Me enfoco en crear aplicaciones web modernas y funcionales
           </p>
-          <button className={estilos.boton_cv}>descargar cv</button>
+          <button className={estilos.boton_cv}>Descargar cv</button>
             </div>
 
             <div className={estilos.contenedorImagen}>

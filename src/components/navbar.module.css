@@ -95,6 +95,6 @@
   transition: transform 0.5s linear;
 }
 
-.botonCambiarTema:hover .iconoTema {
+.botonCambiarTema:hover .iconoSol {
   transform: rotate(100deg);
 }
