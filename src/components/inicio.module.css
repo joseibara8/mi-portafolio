@@ -18,7 +18,7 @@
 }
 .contenedorTextoInicial h2{
   font-size: 50px;
-  color: #7182F0;
+  color: var(--color-acento);
 }
 .contenedorTextoInicial h9{
   font-size: 36px;
@@ -53,7 +53,7 @@
 }
 .boton_cv:hover{
   transform: translateY(-2);
-  box-shadow: 0 15px 10px var(--borde-barra-navegacion); 
+  box-shadow: var(--sombra-amplia);
 }
 
 .imagen {
@@ -87,7 +87,7 @@
   border: 0px solid var(--fondo-iconos);
   border-radius: 50%;
   background-color: var(--fondo-iconos);
-  box-shadow:0 2px 6px var(--borde-barra-navegacion) ;
+  box-shadow: var(--sombra-suave);
 }
 
 .span{

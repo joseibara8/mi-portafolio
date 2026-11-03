@@ -2,7 +2,7 @@
 .contenedorTecnologia {
   display: grid;
   grid-template-columns: 4fr 5fr;
-  background-color: var(--color-fondo);
+  background-color: var(--fondo-pagina);
   min-height: 90vh;
   height: auto;
   overflow: visible;
@@ -42,7 +42,7 @@
 
 .divIconos{
 border: 0px solid var(--color-acento);
-  box-shadow: 0 2px 6px var(--borde-barra-navegacion); 
+  box-shadow: var(--sombra-suave);
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
@@ -84,7 +84,7 @@ border: 0px solid var(--color-acento);
   grid-column: 1 / -1;
   text-align: center;
   align-self: center;
-  box-shadow: 0 2px 6px var(--borde-barra-navegacion); 
+  box-shadow: var(--sombra-suave);
   border: 0px solid var(--color-acento);
   background-color: var(--blanco); 
   padding: 7px;

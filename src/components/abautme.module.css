@@ -29,7 +29,7 @@
 }
 .contenedor_abautme1 h2 {
   font-size: 40px;
-  color: #7182f0;
+  color: var(--color-acento);
 }
 
 .contenedor_abautme2 {
@@ -41,7 +41,7 @@
 }
 
 .caja_refran {
-  box-shadow: 0 2px 6px var(--borde-barra-navegacion);  
+  box-shadow: var(--sombra-suave);
   border-radius: 20px;
   width: 70%;
   font-size: 30px;
@@ -54,7 +54,7 @@
 .contenedorTecnologia {
   display: grid;
   grid-template-columns: 4fr 5fr;
-  background-color: var(--color-fondo);
+  background-color: var(--fondo-pagina);
   min-height: 90vh;
   height: auto;
   overflow: visible;
@@ -176,7 +176,7 @@ font-size: 20px;
   border-radius: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow:0 2px 6px var(--borde-barra-navegacion) ;
+  box-shadow: var(--sombra-suave);
   transition: transform .4s ,box-shadow .3s;
   cursor: pointer;
 }
@@ -184,7 +184,7 @@ font-size: 20px;
 
 .contenedorIconosFrontend:hover{
   transform: translateY(-2);
-  box-shadow:0px 15px 10px var(--borde-barra-navegacion) ;
+  box-shadow: var(--sombra-amplia);
 }
 
 .contenedorIconosFrontend i{

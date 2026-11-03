@@ -6,21 +6,27 @@
 
 :root {
   color-scheme: dark;
-  --negro:black;
-  --fondo-pagina: #0f0f0f;
-  --color-texto-pagina: #f5f5f5;
-  --color-texto-secundario: #A3A3A3;
-  --fondo-input:#c9c9c9;
-  --fondo-barra-navegacion: #1a1a1a;
-  --fondo-iconos: #333333;
-  --borde-barra-navegacion: #2d2d2d;
+  --negro: #000;
+  --blanco: #2b3545;
+  --fondo-pagina: #171b24;
+  --color-texto-pagina: #edf1f7;
+  --color-texto-secundario: #b6c0d0;
+  --fondo-input: #202a39;
+  --fondo-barra-navegacion: #1d2532;
+  --fondo-iconos: #222c3b;
+  --borde-barra-navegacion: #303b4c;
   --color-enlace-hover: rgb(255 255 255 / 65%);
-  --color-subrayado: #a3a3a3;
-  --fondo-boton-tema: #2d2d2d;
+  --color-subrayado: #8792a5;
+  --fondo-boton-tema: #293449;
   --color-boton-tema: #FFC107;
-  --color-boton: #9278F5;
-  --color-acento:#7182F0;
-    --color-acento2:#9278F5;
+  --color-boton: #6b5cc7;
+  --color-acento: #a5b4fc;
+  --color-acento1: rgb(165 180 252 / 12%);
+  --color-acento2: #c4b5fd;
+  --sombra-suave: 0 2px 6px rgb(0 0 0 / 22%);
+  --sombra-elevada: 0 10px 10px rgb(0 0 0 / 30%);
+  --sombra-amplia: 0 15px 10px rgb(0 0 0 / 32%);
+  --sombra-hover: 0 6px 12px rgb(0 0 0 / 32%);
 }
 
 html[data-theme="light"] {
@@ -38,7 +44,13 @@ html[data-theme="light"] {
   --fondo-boton-tema: #f0f0f0;
   --color-boton-tema:  #9278F5;
   --color-acento:#7182F0;
+   --color-acento1:rgba(113, 130, 240, 0.171);
   --color-acento2:#9278F5;
+  --color-boton: #9278F5;
+  --sombra-suave: 0 2px 6px var(--borde-barra-navegacion);
+  --sombra-elevada: 0 10px 10px var(--borde-barra-navegacion);
+  --sombra-amplia: 0 15px 10px var(--borde-barra-navegacion);
+  --sombra-hover: 0 6px 12px var(--borde-barra-navegacion);
 }
 
 html {
