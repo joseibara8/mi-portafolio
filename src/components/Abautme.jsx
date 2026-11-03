@@ -91,13 +91,12 @@ export const Abautme = () => {
               </div>
               <div className={estilos.contenedorIconosFrontend}>
                 <i
-                  className={` devicon-nextjs-plain ${estilos.iconoTecnologia}`}
+                  className={` devicon-nextjs-plain colored ${estilos.iconoTecnologia}`}
                   aria-hidden="true"
                 ></i>
                 <p>next</p>
               </div>
-            </div>
-
+            </div>    
           </div>
           <div>
             <div className={estilos.frontendTitulo}>
@@ -110,38 +109,29 @@ export const Abautme = () => {
                   className={`devicon-nodejs-plain colored ${estilos.iconoTecnologia}`}
                   aria-hidden="true"
                 ></i>
-                <p>html</p>
+                <p>node</p>
               </div>
               <div className={estilos.contenedorIconosFrontend}>
                 <i
-                  className={`devicon-css3-plain colored  ${estilos.iconoTecnologia}`}
+                  className={`devicon-express-original colored ${estilos.iconoTecnologia}`}
                   aria-hidden="true"
                 ></i>
-                <p>css</p>
+                <p>express</p>
               </div>
               <div className={estilos.contenedorIconosFrontend}>
                 <i
-                  className={`devicon-javascript-plain colored ${estilos.iconoTecnologia}`}
+                  className={`devicon-postgresql-plain colored  ${estilos.iconoTecnologia}`}
                   aria-hidden="true"
                 ></i>
-                <p>javascript</p>
+                <p>postgresql</p>
               </div>
               <div className={estilos.contenedorIconosFrontend}>
                 <i
-                  className={`devicon-react-original colored ${estilos.iconoTecnologia}`}
+                  className={`devicon-mysql-plain colored ${estilos.iconoTecnologia}`}
                   aria-hidden="true"
                 ></i>
-                <p>react</p>
+                <p>mysql</p>
               </div>
-              <div className={estilos.contenedorIconosFrontend}>
-                <i
-                  className={` devicon-nextjs-plain ${estilos.iconoTecnologia}`}
-                  aria-hidden="true"
-                ></i>
-                <p>next</p>
-              </div>
-                    
-                    
             </div>
           </div>
           <div>
@@ -152,40 +142,38 @@ export const Abautme = () => {
             <div className={estilos.iconosFrontend}>
               <div className={estilos.contenedorIconosFrontend}>
                 <i
-                  className={`devicon-html5-plain colored ${estilos.iconoTecnologia}`}
+                  className={`devicon-git-plain colored ${estilos.iconoTecnologia}`}
                   aria-hidden="true"
                 ></i>
-                <p>html</p>
+                <p>git</p>
               </div>
               <div className={estilos.contenedorIconosFrontend}>
                 <i
-                  className={`devicon-css3-plain colored  ${estilos.iconoTecnologia}`}
+                  className={`devicon-docker-plain colored  ${estilos.iconoTecnologia}`}
                   aria-hidden="true"
                 ></i>
-                <p>css</p>
+                <p>docker</p>
               </div>
               <div className={estilos.contenedorIconosFrontend}>
                 <i
-                  className={`devicon-javascript-plain colored ${estilos.iconoTecnologia}`}
+                  className={`devicon-vercel-original colored ${estilos.iconoTecnologia}`}
                   aria-hidden="true"
                 ></i>
-                <p>javascript</p>
+                <p>vercel</p>
               </div>
               <div className={estilos.contenedorIconosFrontend}>
-                <i
-                  className={`devicon-react-original colored ${estilos.iconoTecnologia}`}
+                <svg
+                  className={estilos.iconoNeon}
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
-                ></i>
-                <p>react</p>
+                >
+                  <title>Neon</title>
+                  <path d="M24 0V24l-9.365-8.045V24H0V0ZM2.942 21.087h8.751V9.563l9.365 8.204V2.919L2.942 2.914Z" />
+                </svg>
+                <p>neon</p>
               </div>
-              <div className={estilos.contenedorIconosFrontend}>
-                <i
-                  className={` devicon-nextjs-plain ${estilos.iconoTecnologia}`}
-                  aria-hidden="true"
-                ></i>
-                <p>next</p>
-              </div>
-              
             </div>
           </div>
         </div>
