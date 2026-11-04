@@ -4,7 +4,7 @@ import { useState } from "react";
 import estilos from "./navbar.module.css";
 
 export const Navbar = () => {
-  const [isLightTheme, setIsLightTheme] = useState(false);
+  const [isLightTheme, setIsLightTheme] = useState(true);
 
   const toggleTheme = () => {
     const nextTheme = isLightTheme ? "dark" : "light";
