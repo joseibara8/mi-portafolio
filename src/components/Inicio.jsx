@@ -9,7 +9,13 @@ export const Inicio = () => {
           <p>
             Tengo 20 años y me apasiona la tecnologia. Me enfoco en crear aplicaciones web modernas y funcionales
           </p>
-          <button className={estilos.boton_cv}>Descargar cv</button>
+          <a
+            className={estilos.boton_cv}
+            href="/CV_Jose_Benjamin_Ibarra_Sanchez.pdf"
+            download="CV_Jose_Benjamin_Ibarra_Sanchez.pdf"
+          >
+            Descargar CV
+          </a>
             </div>
 
             <div className={estilos.contenedorImagen}>

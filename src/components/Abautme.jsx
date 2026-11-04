@@ -14,13 +14,7 @@ export const Abautme = () => {
             ¿Quien <strong>soy?</strong>
           </h2>
           <p>
-            Tengo <strong>19 años</strong> y soy estudiante de{" "}
-            <strong>Ingeniería en Sistemas</strong> en la{" "}
-            <strong>UAS Mazatlán</strong>, apasionado por el desarrollo de
-            software y la creación de aplicaciones web completas.
-            <br />
-            <br />
-            Me desempeño como <strong>desarrollador full-stack</strong>, con
+             Tengo <strong>20 años</strong> y Me desempeño como <strong>desarrollador full-stack</strong>, con
             experiencia en el desarrollo tanto del <strong>frontend</strong>{" "}
             como del <strong>backend</strong>. Disfruto transformar ideas en
             soluciones funcionales, escalables y con una buena experiencia de
@@ -28,6 +22,13 @@ export const Abautme = () => {
             <strong>Next.js</strong>, <strong>Node.js</strong>,{" "}
             <strong>Express</strong> y <strong>PostgreSQL</strong>, entre otras.
             <br />
+            <br />           
+            Soy estudiante de{" "}
+            <strong>Ingeniería en Sistemas</strong> en la{" "}
+            <strong>UAS Mazatlán</strong>, apasionado por el desarrollo de
+            software y la creación de aplicaciones web completas.
+            <br />
+            <br />           
             Siempre estoy aprendiendo nuevas tecnologías, mejorando mis
             habilidades y fortaleciendo mis buenas prácticas de desarrollo, como
             el uso de <strong>Git</strong>, el diseño de <strong>APIs</strong> y
