@@ -64,13 +64,23 @@ const Proyectos = () => {
               </div>
             </div>
             <div className={estilos.contenedorbotones}>
-              <button className={estilos.botonDemo} type="button">
+              <a
+                className={estilos.botonDemo}
+                href="https://notas-react-rho.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/exterior (1).png" alt="" />
                 Demo
-              </button>
-              <button className={estilos.botonCodigo} type="button">
+              </a>
+              <a
+                className={estilos.botonCodigo}
+                href="https://github.com/joseibara8/notas_react"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Ver código
-              </button>
+              </a>
             </div>
           </div>
 
