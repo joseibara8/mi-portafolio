@@ -5,14 +5,14 @@
   display: flex;
   flex-direction: row;
   background-color: var(--fondo-barra-navegacion);
-  padding: 20px;
+  padding: 16px clamp(16px, 4vw, 32px);
   align-items: center;
   justify-content: center;
   border: 2px solid var(--borde-barra-navegacion);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .barraNavegacion h4{
-  font-size: 28px;
+  font-size: clamp(20px, 2.2vw, 28px);
 }
 .nombrePortafolio {
   color: var(--color-texto-pagina);
@@ -23,7 +23,7 @@
 .contenedorEnlaces {
   display: flex;
   color: var(--color-texto-pagina);
-  font-size: 22px;
+  font-size: clamp(16px, 1.8vw, 22px);
   flex: 8;
   margin: auto;
   justify-content: center;
@@ -35,6 +35,45 @@
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .barraNavegacion {
+    gap: 14px;
+  }
+
+  .nombrePortafolio {
+    flex: 1 1 auto;
+    text-align: left;
+  }
+
+  .contenedorEnlaces {
+    flex: 1 1 100%;
+    order: 3;
+    gap: 8px 16px;
+    flex-wrap: wrap;
+  }
+
+  .enlace {
+    margin: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .barraNavegacion {
+    padding: 12px 16px;
+  }
+
+  .contenedorEnlaces {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    text-align: center;
+  }
+
+  .botonCambiarTema {
+    margin-left: 0;
+  }
 }
 
 .enlace:hover {

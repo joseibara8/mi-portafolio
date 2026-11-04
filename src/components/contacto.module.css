@@ -1,17 +1,17 @@
 .contenedor{
-    min-height: 90vh;
-    height: auto;
+    min-height: 0;
     display: grid;
     grid-template-columns: 3fr 5fr 4fr;
-    padding-top: 100px;
-    margin-top: 100px;
+    gap: clamp(20px, 3vw, 42px);
+    padding: clamp(48px, 8vw, 100px) clamp(20px, 5vw, 72px) clamp(40px, 6vw, 80px);
+    margin-top: 0;
 
 }
 
 .contenedorTexto{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0;
     gap: 12px   ;
 }
 .titulo{
@@ -36,11 +36,12 @@
         margin-top: 3px;
 }
 .contenedorTexto h2{
-    font-size: 35px;
+    font-size: clamp(30px, 3.5vw, 40px);
 }
 
 .contenedorTexto p {
-    font-size: 20px;
+    font-size: clamp(16px, 1.7vw, 20px);
+    line-height: 1.5;
     color: var(--color-texto-secundario);
 }
 .contenedorInputs{
@@ -124,7 +125,7 @@
 
 
 .contenedorEnlace{
-    padding: 25px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 20px   ;
@@ -154,6 +155,54 @@
 .enlaces h4{
     font-size: 22px;
     color: var(--color-texto);
+}
+
+@media (max-width: 1000px) {
+    .contenedor {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .contenedor3 {
+        grid-column: 1 / -1;
+    }
+
+    .contenedorEnlace {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .enlaces {
+        grid-template-columns: 40px minmax(0, 1fr);
+        padding: 16px;
+    }
+
+    .enlaces img {
+        display: none;
+    }
+
+    .enlaces i {
+        width: 40px;
+        height: 40px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 650px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor3 {
+        grid-column: auto;
+    }
+
+    .contenedorEnlace {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedorInputs button {
+        width: 100%;
+    }
 }
 
 .enlaces img{

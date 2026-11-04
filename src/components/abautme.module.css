@@ -2,10 +2,10 @@
   display: grid;
   flex-direction: row;
   background-color: var(--fondo-pagina);
-  padding-top: 0px;
+  padding: 0 clamp(20px, 5vw, 72px) clamp(40px, 6vw, 80px);
   grid-template-columns: 1fr 1fr;
-  min-height: 90vh;
-  height: auto;
+  column-gap: clamp(48px, 8vw, 140px);
+  min-height: 0;
 
 }
 
@@ -13,14 +13,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 25px;
-  padding-left: 50px;
-  padding-top: 0px;
+  padding: 0;
 }
 
 .contenedor_abautme1 p {
-  font-size: 20px;
-  width: 80%;
+  font-size: clamp(16px, 1.7vw, 20px);
+  width: 100%;
+  max-width: 42rem;
+  line-height: 1.5;
   text-align: justify;
   color: var(--color-texto-secundario);
 }
@@ -28,7 +28,7 @@
   color: var(--color-texto-pagina);
 }
 .contenedor_abautme1 h2 {
-  font-size: 40px;
+  font-size: clamp(32px, 4vw, 40px);
   color: var(--color-acento);
 }
 
@@ -36,8 +36,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 25px;
-  padding-top: 0px;
+  padding: 0;
 }
 
 .caja_refran {
@@ -74,15 +73,16 @@
 }
 
 .contenedorTexto h2{
-  font-size: 40px;
+  font-size: clamp(32px, 4vw, 40px);
   font-weight: bold;
   color: var(--color-texto-pagina);
 }
 .contenedorTexto p{
-  font-size: 22px;
+  font-size: clamp(16px, 1.8vw, 22px);
   color: var(--color-texto-secundario);
   line-height: 1.5;
-  width: 70%;
+  width: 100%;
+  max-width: 34rem;
 }
 
 
@@ -135,19 +135,19 @@ font-size: 20px;
   color: var(--color-acento);
 }
 .contenedorTexto h2 strong{
-  font-size: 40px;
+  font-size: inherit;
   font-weight: bold;
   color: var(--color-acento);
 }
 
 
 .contenedor_abautme1 h2 strong{
-  font-size: 40px;
+  font-size: inherit;
   font-weight: bold;
   color: var(--color-acento);
 }
 .contenedor_abautme1 h2 {
-  font-size: 40px;
+  font-size: clamp(32px, 4vw, 40px);
   font-weight: bold;
   color: var(--color-texto-pagina);
 }
@@ -198,8 +198,8 @@ font-size: 20px;
 
 .iconosFrontend{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(78px, 1fr));
+  gap: 12px;
   overflow: visible;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -219,4 +219,21 @@ font-size: 20px;
 .frontendTitulo i{
   color: var(--color-acento);
   font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .contenedor_abaut_me {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 460px) {
+  .contenedor_abaut_me {
+    padding-inline: 20px;
+  }
+
+  .iconosFrontend {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

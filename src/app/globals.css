@@ -71,6 +71,23 @@ body {
   overflow-x: clip;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 140px;
+  }
+}
+
 body {
   min-height: 100%;
   display: flex;
